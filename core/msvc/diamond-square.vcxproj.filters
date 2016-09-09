@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\include\diamond_square\HeightMap.hpp" />
+    <ClInclude Include="..\include\diamond_square\diamond_square.hpp" />
+    <ClInclude Include="..\include\diamond_square\HeightMapGenerator.hpp" />
+    <ClInclude Include="..\include\diamond_square\HeightMapLayer.hpp" />
+    <ClInclude Include="..\include\diamond_square\NoiseGenerator.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\diamond_square\HeightMap.inl" />
+    <None Include="..\include\diamond_square\HeightMapGenerator.inl" />
+    <None Include="..\include\diamond_square\HeightMapLayer.inl" />
+    <None Include="..\include\diamond_square\NoiseGenerator.inl" />
+  </ItemGroup>
+</Project>
