@@ -1,6 +1,6 @@
 ## Generating height-maps with diamond square
 
-This is a header-only C++ library implementing the [diamond square](https://en.wikipedia.org/wiki/Diamond-square_algorithm) for height-map generation.
+This is a header-only C++ library implementing the [diamond square](https://en.wikipedia.org/wiki/Diamond-square_algorithm) algorithm for height-map generation.
 
 ## Demo
 
