@@ -1,3 +1,10 @@
+/**
+ * Application entry point.
+ *
+ * @author Raoul Harel
+ * @url github.com/rharel/cpp-diamond-square
+ */
+
 #include <iostream>
 #include <limits>
 #include <vector>
@@ -99,7 +106,7 @@ int main()
     
     NoiseGenerator<float> noise_generator
     (
-        [](float t)
+        [](float t)  // Exponential easing function
         {
             return (t == 1.0f) ? 1.0f : -std::pow(2.0f, -10.0f * t) + 1.0f;
         },

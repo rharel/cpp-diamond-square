@@ -1,3 +1,10 @@
+/**
+ * Noise generator class implementation.
+ *
+ * @author Raoul Harel
+ * @url github.com/rharel/cpp-diamond-square
+ */
+
 #include <diamond_square/NoiseGenerator.hpp>
 
 

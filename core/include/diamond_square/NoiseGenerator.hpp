@@ -1,3 +1,10 @@
+/**
+ * Noise generator class header.
+ *
+ * @author Raoul Harel
+ * @url github.com/rharel/cpp-diamond-square
+ */
+
 #pragma once
 
 #include <random>
@@ -6,6 +13,10 @@
 
 namespace diamond_square 
 {
+    /**
+     * This class represents a source of random offsets for the diamond square
+     * algorithm.
+     */
     template <typename T>
     class NoiseGenerator
     {
@@ -18,6 +29,18 @@ namespace diamond_square
         public:
         typedef T (*EasingFunction)(T t);
 
+        /**
+         * Creates a new generator instance.
+         *
+         * @param easing_function
+         *      An easing function (as used in tweening).
+         * @param min_range
+         *      Minimum range size to sample from.
+         * @param max_range
+         *      Maximum range size to sample from.
+         * @param bias
+         *      Sample bias.
+         */
         NoiseGenerator
         (
             EasingFunction easing_function,
@@ -26,8 +49,17 @@ namespace diamond_square
             T bias = 0.0f 
         );
 
+        /**
+         * Seeds this generator.
+         */
         void Seed(unsigned int value);
-
+        /**
+         * Generates a random offset.
+         *
+         * @param relative_level_of_detail
+         *      The current LOD in the diamond-square algorithm as a fraction
+         *      of the maximum LOD of the map.
+         */
         T Generate(T relative_level_of_detail);
 
         private:

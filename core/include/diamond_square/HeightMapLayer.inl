@@ -1,3 +1,10 @@
+/**
+ * Height map layer class implementation.
+ *
+ * @author Raoul Harel
+ * @url github.com/rharel/cpp-diamond-square
+ */
+
 #include <diamond_square/HeightMapLayer.hpp>
 
 
